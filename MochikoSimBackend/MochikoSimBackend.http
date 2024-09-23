@@ -1,0 +1,6 @@
+@MochikoSimBackend_HostAddress = http://localhost:5106
+
+GET {{MochikoSimBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
