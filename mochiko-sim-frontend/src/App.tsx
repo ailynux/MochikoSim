@@ -4,6 +4,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import { getPetStatus, feedPet, playWithPet, healPet } from './services/PetService';
 import { Pet } from './types/Pet';
+import './App.css'; // Import your styles
 
 const App: React.FC = () => {
   const [pet, setPet] = useState<Pet | null>(null);
@@ -20,6 +21,23 @@ const App: React.FC = () => {
 
     fetchPetStatus();
   }, []);
+
+  // Function to determine the pet image based on status
+  const getPetImage = (): string | undefined => {
+    if (!pet) return undefined;  // Return undefined instead of null
+
+    if (pet.hunger > 70) {
+      return './assets/pets/pet_hungry.jpg';  // Show hungry pet image
+    }
+    if (pet.health < 30) {
+      return './assets/pets/pet_sadness.jpg';  // Show sick pet image
+    }
+    if (pet.happiness < 30) {
+      return './assets/pets/pet_happiness.jpg';  // Show sad pet image
+    }
+
+    return './assets/pets/pet_happy.jpg';  // Default to happy pet image
+  };
 
   const handleFeed = async () => {
     try {
@@ -57,9 +75,19 @@ const App: React.FC = () => {
           <p>Hunger: {pet.hunger}</p>
           <p>Happiness: {pet.happiness}</p>
           <p>Health: {pet.health}</p>
-          <button onClick={handleFeed}>Feed</button>
-          <button onClick={handlePlay}>Play</button>
-          <button onClick={handleHeal}>Heal</button>
+          
+          {/* Display the pet's image based on the status */}
+          <img 
+            src={getPetImage()} 
+            alt="Pet status" 
+            style={{ width: '200px', height: '200px' }} // Adjust size as needed
+          />
+
+          <div>
+            <button onClick={handleFeed}>Feed</button>
+            <button onClick={handlePlay}>Play</button>
+            <button onClick={handleHeal}>Heal</button>
+          </div>
         </div>
       ) : (
         <p>Loading pet status...</p>

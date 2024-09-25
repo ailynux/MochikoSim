@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MochikoSimBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d219c2b02e2883121fc8d6dfa6ebcaec8eb704e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a238a73adb999b4b92cd42d6b6889b0a3b51d91")]
 [assembly: System.Reflection.AssemblyProductAttribute("MochikoSimBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MochikoSimBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/MochikoSim/MochikoSimBackend/MochikoSimBackend.csproj": {}
+    "/Users/ailyndiaz/Desktop/MochikoSim/MochikoSim/MochikoSimBackend/MochikoSimBackend.csproj": {}
   },
   "projects": {
-    "/workspaces/MochikoSim/MochikoSimBackend/MochikoSimBackend.csproj": {
+    "/Users/ailyndiaz/Desktop/MochikoSim/MochikoSim/MochikoSimBackend/MochikoSimBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/MochikoSim/MochikoSimBackend/MochikoSimBackend.csproj",
+        "projectUniqueName": "/Users/ailyndiaz/Desktop/MochikoSim/MochikoSim/MochikoSimBackend/MochikoSimBackend.csproj",
         "projectName": "MochikoSimBackend",
-        "projectPath": "/workspaces/MochikoSim/MochikoSimBackend/MochikoSimBackend.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/MochikoSim/MochikoSimBackend/obj/",
+        "projectPath": "/Users/ailyndiaz/Desktop/MochikoSim/MochikoSim/MochikoSimBackend/MochikoSimBackend.csproj",
+        "packagesPath": "/Users/ailyndiaz/.nuget/packages/",
+        "outputPath": "/Users/ailyndiaz/Desktop/MochikoSim/MochikoSim/MochikoSimBackend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "/Users/ailyndiaz/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -43,6 +43,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -71,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
